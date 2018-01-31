@@ -1,16 +1,25 @@
 console.log('Starting App.js');
+//node modules
 const fs = require('fs'); //fetches the fs module // filesystem, now we can use appendfile
-const os = require('os'); //The os module provides a number of operating system-related utility methods.
-// const notes = require('./notes.js');
 const _ = require('lodash');
 
-//
+//files
+const notes = require('./notes.js');
+var command = process.argv[2];
+console.log('Command:', command);
+console.log(process.argv);
 
-var filteredArray = _.uniq(['Saad', 1, 'Saad', 1, 2, 3, 4]);
-console.log(filteredArray);
-
-// var result = notes.addNote();
-// console.log(result);
-// var addresult = notes.add(9, -2);
-// console.log(addresult);
-//
+if (command === 'add') {
+  console.log('Adding new note');
+}
+else if (command === 'list') {
+  console.log('Listing all notes');
+}
+else if (command === 'read') {
+  console.log('Reading note');
+}
+else if (command === 'remove') {
+  console.log('Removing note');
+}else {
+  console.log('Command not recognized');
+}
