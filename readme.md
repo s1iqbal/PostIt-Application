@@ -1,18 +1,21 @@
-Command Example: node app.js read --title="to buy"
+# Command Example:
+node app.js read --title="to buy"
 
-Commands:
+# Commands:
 read
 add
 remove
 list
 
-Properties:
+#Properties:
 --title
 --body
 
-Completed: Base line and core functionalities for notes.
+#Completed:
+Base line and core functionalities for notes.
 
-TODO:
+#TODO:
+```
 1.Chain property calls to each command. Explain in app how commands are functioned.
 2.GUI using ElectronJS and react
 3.Full fleshed authentication with proper routing/security.
@@ -20,3 +23,4 @@ TODO:
 5.Geolocation tagged on individual notes to see where note was created.
 6.Google Map pins displayed on map for each note created.
 6.Create a Rest API for application.
+```
