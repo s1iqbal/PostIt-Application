@@ -3,16 +3,16 @@ node app.js read --title="to buy"
 
 # Commands:
 ```
-read
-add
-remove
-list
+read <br />
+add <br />
+remove <br />
+list <br />
 ```
 
 # Properties:
 ```
---title
---body
+--title <br />
+--body <br />
 ```
 
 # Completed:
