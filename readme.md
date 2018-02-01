@@ -7,14 +7,15 @@ add
 remove
 list
 
-#Properties:
+# Properties:
 --title
 --body
 
-#Completed:
+# Completed:
 Base line and core functionalities for notes.
 
-#TODO:
+# TODO:
+
 ```
 1.Chain property calls to each command. Explain in app how commands are functioned.
 2.GUI using ElectronJS and react
