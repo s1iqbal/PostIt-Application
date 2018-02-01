@@ -2,17 +2,23 @@
 node app.js read --title="to buy"
 
 # Commands:
+```
 read <br />
 add <br />
 remove <br />
 list <br />
+```
 
 # Properties:
+```
 --title <br />
 --body <br />
+```
 
 # Completed:
+```
 Base line and core functionalities for notes.
+```
 
 # TODO:
 
