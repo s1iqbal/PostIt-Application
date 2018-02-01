@@ -1,25 +1,34 @@
+
 console.log('Starting App.js');
-//node modules
+//n4714ode modules
 const fs = require('fs'); //fetches the fs module // filesystem, now we can use appendfile
 const _ = require('lodash');
+const yargs = require('yargs');
 
 //files
 const notes = require('./notes.js');
-var command = process.argv[2];
+
+
+const argv = yargs.argv;
+var command = argv._[0];
+console.log();
+console.log();
+console.log();
+
 console.log('Command:', command);
-console.log(process.argv);
+console.log('Yargs', argv);
 
 if (command === 'add') {
-  console.log('Adding new note');
+  notes.addNote(argv.title, argv.body);
 }
 else if (command === 'list') {
-  console.log('Listing all notes');
+  notes.getAll();
 }
 else if (command === 'read') {
-  console.log('Reading note');
+  notes.getNote(argv.title);
 }
 else if (command === 'remove') {
-  console.log('Removing note');
+  notes.removeNote(argv.title);
 }else {
   console.log('Command not recognized');
 }
