@@ -1,22 +1,32 @@
 # Help flag:
+```
 node app.js --help
 node app.js --help [command]
+```
 
 # Command Example:
+```
 node app.js read --title="to buy"
+```
 
 # Commands:
+```
 read
 add
 remove
 list
+```
 
 # Properties:
+```
 --title
 --body
+```
 
 # Completed:
+```
 Base line and core functionalities for notes.
+```
 
 # TODO:
 
