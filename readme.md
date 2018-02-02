@@ -1,3 +1,7 @@
+# Help flag:
+node app.js --help
+node app.js --help [command]
+
 # Command Example:
 node app.js read --title="to buy"
 
