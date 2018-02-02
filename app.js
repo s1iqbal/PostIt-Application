@@ -3,8 +3,31 @@ const _ = require('lodash');
 const yargs = require('yargs');
 
 const notes = require('./notes.js');
+var titleOptions = {
+  describe: 'Title of note',
+  demand: true,
+  alias:'t'
+};
+var bodyOptions = {
+    describe: 'The body of the note',
+    demand: true,
+    alias:'b'
+};
 
-const argv = yargs.argv;
+const argv = yargs //shortcut alias of flags in terminal
+  .command('add', 'Add a note', {
+    title: titleOptions,
+    bodyOptions: bodyOptions
+  })
+  .command('list', 'List all notes')
+  .command('read', 'Read a note', {
+    title: titleOptions
+  })
+  .command('remove', 'Remove a note', {
+    title: titleOptions
+  })
+  .help() //with help flag shows this.
+  .argv;
 var command = argv._[0];
 
 
