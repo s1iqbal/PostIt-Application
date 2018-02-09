@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Andrew Mead",
+  "author": "Saad Iqbal",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.13.1",
