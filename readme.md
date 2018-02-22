@@ -1,41 +1,13 @@
-# Help flag:
-```
-node app.js --help
-node app.js --help [command]
-```
+#bootstrap create-react-app and electron
 
-# Command Example:
-```
-node app.js read --title="to buy"
-```
+Code repo for post on freeCodeCamp.
 
-# Commands:
-```
-read
-add
-remove
-list
-```
+https://medium.freecodecamp.com/building-an-electron-application-with-create-react-app-97945861647c#.ze6c9qin1
 
-# Properties:
-```
---title
---body
-```
+There is another branch, [npm-start](https://github.com/csepulv/electron-with-create-react-app/tree/npm-start)
+It uses `npm-start` instead of `npm run dev`. (change submitted by [vcarl](https://github.com/vcarl)) Details are in this [pull request](https://github.com/csepulv/electron-with-create-react-app/pull/2)
 
-# Completed:
-```
-Base line and core functionalities for notes.
-```
+Thanks to [marbemac](https://github.com/marbemac) for submitting a pull request that captures logging output. It can be found in [logging-capture](https://github.com/csepulv/electron-with-create-react-app/tree/logging-capture)
 
-# TODO:
+Thanks to [vicentedealencar](https://github.com/vicentedealencar) for an example of using [electron-builder](https://github.com/electron-userland/electron-builder) for packaging. Details are [here](https://github.com/vicentedealencar/electron-with-create-react-app/commit/f1729381d588e65ac140ce5a08cc6277babd9641).
 
-```
-1.Chain property calls to each command. Explain in app how commands are functioned. (Finished)
-2.GUI using ElectronJS and react (In progress)
-3.Full fleshed authentication with proper routing/security.
-4.MongoDb, store notes on server to be able to sync across devices. (In progress)
-5.Geolocation tagged on individual notes to see where note was created.
-6.Google Map pins displayed on map for each note created.
-6.Create a Rest API for application.
-```
